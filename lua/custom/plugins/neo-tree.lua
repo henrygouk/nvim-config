@@ -11,14 +11,20 @@ return {
   },
   cmd = 'Neotree',
   keys = {
-    { '\\', ':Neotree reveal<CR>', desc = 'NeoTree reveal' },
+    { '\\', ':Neotree filesystem reveal left toggle<CR>', desc = 'NeoTree reveal' },
   },
   opts = {
+    -- close_if_last_window = true,
     filesystem = {
       window = {
         mappings = {
           ['\\'] = 'close_window',
         },
+      },
+    },
+    buffers = {
+      follow_current_file = {
+        enable = true,
       },
     },
   },
