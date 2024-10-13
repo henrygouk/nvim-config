@@ -12,11 +12,14 @@ return {
         offsets = {
           {
             filetype = 'neo-tree',
-            text = 'Nvim Tree',
+            text = 'Neotree',
             separator = true,
             text_align = 'left',
           },
         },
+        close_command = function(bufnum)
+          require('bufdelete').bufdelete(bufnum, true)
+        end,
       },
     }
   end,

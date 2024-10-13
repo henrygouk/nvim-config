@@ -14,7 +14,7 @@ return {
     { '\\', ':Neotree filesystem reveal left toggle<CR>', desc = 'NeoTree reveal' },
   },
   opts = {
-    --close_if_last_window = true,
+    close_if_last_window = true,
     enable_git_status = true,
     enable_diagnotics = true,
     filesystem = {
